@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "from-read-to-remix",
+    "title": "从“能看网页”到“能改网页”",
+    "date": "2024-10-01",
+    "category": "入门",
+    "cover": "assets/blog1img.jpg",
+    "excerpt": "在项目驱动下掌握HTML/CSS/JS，完成从阅读到拆解的能力跃迁。",
+    "contentUrl": "assets/articles/from-read-to-remix.html"
+  },
+  {
+    "slug": "flexbox-and-box-model",
+    "title": "Flexbox布局与盒模型调试",
+    "date": "2024-11-12",
+    "category": "布局",
+    "cover": "assets/blog2img.jpg",
+    "excerpt": "通过DevTools观察content/padding/border/margin与弹性盒布局。",
+    "contentUrl": "assets/articles/flexbox-and-box-model.html"
+  },
+  {
+    "slug": "第三篇文章",
+    "title": "从有意思到有意义",
+    "date": "2024-11-12",
+    "category": "布局",
+    "cover": "assets/blog3img.jpg",
+    "excerpt": "搭建个人博客的体会。",
+    "contentUrl": "assets/articles/第三篇文章.html"
+  }
+]
