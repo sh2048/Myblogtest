@@ -128,7 +128,7 @@ async function renderList() {
       return `
       <article class="col-md-6">
         <div class="card h-100">
-          <img class="card-img-top" src="${a.cover}" alt="${escapeHtml(a.title)}封面">
+          <img class="card-img-top" src="${a.cover}" alt="${escapeHtml(a.title)}封面" loading="lazy">
           <div class="card-body">
             <h3 class="h5 card-title">${title}</h3>
             <p class="card-text">${excerpt}</p>
@@ -240,6 +240,9 @@ function initCommentForm(slug) {
 // 内容格式化
 function normalizeArticleHtml(article) {
   let html = article.contentHtml || "";
+  if (html) {
+    html = html.replace(/<img(?![^>]*loading=)([^>]*)>/gi, '<img loading="lazy"$1>');
+  }
   let pCount = (html.match(/<\/p>/gi) || []).length;
   if (pCount > 1 || /<(h\d|ul|ol|pre|blockquote|table|figure|img)\b/i.test(html)) return html;
   let text = html.replace(/^<p>/i, "").replace(/<\/p>$/i, "");
